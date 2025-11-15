@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+  /* font-family: "FF Tisa Sans" sans-serif; */
+}
+
+body {
+  background: url(../assest/Balaji-Wafers_-Case-Study.jpg);
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* Add a subtle overlay for readability */
+  position: relative;
+}
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(255,255,255,0.18);
+  z-index: -1;
+}
+
+.auth-container {
+  display: flex;
+  background-color: #6f09a2e0; /* Slightly more opaque */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18); /* Deeper shadow */
+  max-width: 800px;
+  width: 90%;
+}
+
+.auth-image {
+  flex: 1;
+  /* background-color: #ffe3b3; */
+}
+
+.auth-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: #963ee396;
+}
+
+.auth-form {
+  flex: 1;
+  padding: 30px;
+  background: #963ee396;
+  transition: all 0.4s ease;
+}
+
+.toggle-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.toggle-buttons button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 15px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: 0.3s;
+}
+
+.toggle-buttons button.active {
+  border-color: #f3da49;
+  color: #f3da49;
+}
+
+.form {
+  display: none;
+  flex-direction: column;
+  animation: fade 0.5s ease forwards;
+}
+
+.form.active {
+  display: flex;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.form h2 {
+  text-align: center;
+  color: #fff;
+  font-weight: 800;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.form input {
+  /* color: #0984e3; */
+  background-color: #fff;
+  color: #222;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #963ee3;
+  border-radius: 8px;
+  outline: none;
+  transition: border 0.3s, background 0.3s;
+}
+.form input:hover,
+.form input:focus {
+  background-color: #f3da49;
+  border-color: #b71c1c;
+}
+
+.form button {
+  padding: 12px;
+  background-color: #f3da49;
+  color: #222;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.3s, color 0.3s;
+}
+
+.form button:hover {
+  background-color: #b71c1c;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .auth-container {
+    flex-direction: column;
+  }
+
+  .auth-image {
+    display: none;
+  }
+}
+
+.BT{
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 20px 40px;
+  background-color:#F3DA49;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  border-color: #0b0601;
+
+
+}
+.BT:hover{
+  background-color: #f57c00;
+
+}

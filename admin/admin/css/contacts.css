@@ -1,0 +1,37 @@
+  @font-face {
+  font-family: vvvv;
+  src: url(../fonts/Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf);
+}
+    body {
+      font-family: vvvv;
+      margin: 20px;
+      background: #FCF6D4;
+    }
+
+    h1 {
+      text-align: center;
+      /* color: #ff9800; */
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    th,
+    td {
+      padding: 12px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+
+    th {
+      background:#F3DA49;
+      color: white;
+    }
+
+    tr:hover {
+      background: #f1f1f1;
+    }

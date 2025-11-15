@@ -1,0 +1,78 @@
+  
+  @font-face {
+    font-family: vvvv;
+    src: url(../fonts/Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf);
+  }
+   * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+font-family: vvvv, sans-serif;
+ background: #FCF6D4;
+}
+
+
+  h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2c3e50;
+    font-size: 28px;
+    letter-spacing: 1px;
+  }
+
+  .container {
+    max-width: 1100px;
+    margin: auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  th, td {
+    padding: 14px 18px;
+    text-align: center;
+    border-bottom: 1px solid #e6e6e6;
+    font-size: 15px;
+  }
+
+  th {
+    background-color: #fde82e;
+    color: #000;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #fafafa;
+  }
+
+  tr:hover {
+    background-color: #fff5b7;
+    transition: background 0.3s ease;
+  }
+.delete-btn {
+  background: #e74c3c;
+  color: white;
+  padding: 6px 12px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+.delete-btn:hover {
+  background: #c0392b;
+}

@@ -1,0 +1,16 @@
+@font-face {
+  font-family: p;
+  src: url(../fonts/Playwrite_HU/PlaywriteHU-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: vicky;
+  src: url(../fonts/Google_Sans_Code/GoogleSansCode-Italic-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: vic;
+  src: url(../fonts/Libertinus_Sans/LibertinusSans-Regular.ttf);
+}
+@font-face {
+  font-family: f;
+  src: url(../fonts/Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf);
+}

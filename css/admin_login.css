@@ -1,0 +1,81 @@
+
+ @font-face {
+  font-family: admin;
+  src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+      * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f6fa;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-container {
+             background: transparent;
+            padding: 30px 40px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            border-radius: 8px;
+            width: 350px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #2f3640;
+            font-family:admin;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #353b48;
+            font-weight: 600;
+        }
+
+        input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 12px 10px;
+            margin-bottom: 20px;
+             border: 1px solid #ccc;
+             border-radius: 10px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="email"]:focus, input[type="password"]:focus {
+            border-color: #40739e;
+            outline: none;
+        }
+
+        button {
+            width: 100%;
+            background-color: #40739e;
+            color: white;
+            padding: 12px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #273c75;
+        }
+
+        .error-message {
+            color: #e84118;
+            margin-bottom: 15px;
+            text-align: center;
+            font-weight: 600;
+        }
