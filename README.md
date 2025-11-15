@@ -1,1 +1,1 @@
-Wel come to my fist project repo 
+Welcome to my fist project repo 
